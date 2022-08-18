@@ -14,10 +14,10 @@ const submitForm = e => {
   setTimeout(() => {
     generateQRCode();
 
-    const img = qrcode.querySelector('img').src;
 
     toggleSpinner();
     setTimeout(() => {
+      const img = qrcode.querySelector('img').src;
       generateDownloadLink(img);
       isQrCode = true;
     }, 50);
