@@ -86,10 +86,7 @@ const toggleSpinner = () => {
 const clearQRCode = () => {
   qrcode.innerHTML = '';
   const downloadImageUrl = document.getElementById('downloadImageUrl');
-  if (downloadImageUrl) {
-    console.log('123');
-    downloadImageUrl.remove();
-  }
+  if (downloadImageUrl) downloadImageUrl.remove();
 };
 
 form.addEventListener('submit', submitForm);
