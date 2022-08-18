@@ -33,7 +33,7 @@ const generateDownloadLink = imgSrc => {
   link.id = 'downloadImageUrl';
   const classes = [
     'mt-12',
-    'w-1/2',
+    'w-1/4',
     'transition-all',
     'text-green-900',
     'bg-white',
@@ -57,6 +57,7 @@ const generateDownloadLink = imgSrc => {
     'dark:hover:border-green-600',
     'dark:focus:ring-green-700',
     'mb-8',
+    'text-center',
   ];
   link.classList.add(...classes);
 
